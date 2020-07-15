@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: lightblue;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*****************************GENERAL STYLES*****************************/
+
+.content-wrapper {
+  margin: 5%;
+  border: 2px #fff solid;
+  border-radius: 20px;
+  padding: 2rem;
+  background-color: rgb(47, 128, 161, 0.4);
+}
+
+h1,
+h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 3rem;
+  padding: 0.5rem;
+  margin: 0 0 1.5rem 0;
+}
+
+h3 {
+  padding: 2rem 0 1rem 0;
+}
+
+p span {
+  display: block;
+  font-weight: 700;
+  padding: 0;
+}
+
+p span:before,
+p span:after {
+  content: '"';
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+}
+
+#title {
+  text-align: center;
+  color: #fff;
+  background-color: rgb(47, 128, 161, 0.6);
+  border-radius: 20px;
+}
+
+#description {
+  text-align: center;
+  padding: 20px;
+}
+
+/*******************EVENT STYLING********************/
+
+.event-container label {
+  display: block;
+  padding: 0.2rem;
+}
+
+.event-container input {
+  margin-right: 0.6rem;
+}
+
+.event-container > label ~ input:empty {
+  background-color: white;
+}
+
+.event-container > label ~ input:checked {
+  background-color: green;
+}
+
+
+/*****************STYLING HTE BOYS SECTION*******************/
+.boys-container {
+  display: flex;
+  width: 100%;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.boys-container label {
+  display: flex;
+  flex-flow: row wrap;
+  width: 25%;
+  padding: 2%;
+  justify-content: space-around;
+}
+
+.boys-container > img {
+  height: 200px;
+  width: 0;
+  overflow: hidden;
+  padding-bottom: 65%;
+}
+
+/*********SETTING UP IMAGES**********/
+#image-dean {
+  width: 200px;
+  height: 300px;
+  background: url(../img/dean.jpg/);
+  background-size: cover;
+}
+
+#image-jess {
+  width: 200px;
+  height: 300px;
+  background: url(../img/jess.jpg/);
+  background-size: cover;
+}
+
+#image-logan {
+  width: 200px;
+  height: 300px;
+  background: url(../img/logan.jpg/);
+  background-size: cover;
+}
+
+#image-max {
+  width: 200px;
+  height: 300px;
+  background: url(../img/max.jpg/);
+  background-size: cover;
+}
+
+#image-chris {
+  width: 200px;
+  height: 300px;
+  background: url(../img/chris.jpg/);
+  background-size: cover;
+}
+
+#image-luke {
+  width: 200px;
+  height: 300px;
+  background: url(../img/luke.jpg/);
+  background-size: cover;
+}
+
+
+/*******************STYLING BOY INPUTS********************/

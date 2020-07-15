@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>How Gilmore Are You?</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="content-wrapper">
+      <h1 id="title">How Gilmore Are You?</h1>
+      <p id="description">This survey has been designed to find out the burning question: <span>Just what percentage Gilmore are you?</span><br>
+      It is imperative that you answer truthfully for an accurate score. Those scoring over the 70th percentile will receive a special congratulatory Stars Hollow surprise!</p>
+        <form id="survey-form" class="" action="index.html/submit-results" method="post">
+          <h3>What is your name?</h3>
+          <label id="name-label" for="name-label">Please enter your name <input id="name" type="text" name="name" placeholder="name" required></label>
+          <h3>Where can you be electronically contacted?</h3>
+          <label id="email-label" for="email-label">Please enter your email <input id="email" type="email" name="email" placeholder="email"  required></label>
+          <h3>What number should we contact about your gift? (Should you be so lucky kid!)</h3>
+          <label id="number-label" for="number-label">Please enter your number name <input id="number" type="number" name="phone-number" placeholder="phone number" min="00000000000" max="99999999999" required></label>
+          <h3>Which Gilmore girl gives you the most lols?</h3>
+          <label id="Pick-Gilmore" for="Pick-Gilmore">Pick a Gilmore</label>
+            <select id="dropdown" name="Pick-Gilmore">
+              <option id="dropdown" value="Lorelai">Lorelai</option>
+              <option id="dropdown" value="Rory">Rory</option>
+              <option id="dropdown" value="Emily">Emily</option>
+            </select>
+          <h3>You can go to ONE outlandish town event - which one is it?</h3>
+          <div class="event-container">
+            <label for="danceathon"><input id="radio" type="radio" name="event" value="danceathon">24hr Danceathon</label>
+            <label for="winter-carnival"><input id="winter-carnival" type="radio" name="event" value="winter-carnival">Winter Carnival</label>
+            <label for="halloween-masquerade"><input id="halloween-masquerade" type="radio" name="event" value="halloween-masquerade">Halloween Masquerade</label>
+            <label for="town-meeting"><input id="town-meeting" type="radio" name="event" value="town-meeting">Town Meeting</label>
+            <label for="wedding"><input id="wedding" type="radio" name="event" value="wedding">Wedding</label>
+          </div>
+          <h3>Who dressed the most in 'Boyfriend Material'?</h3>
+          <div class="boys-container">
+            <label for="Dean"><div id="image-dean"></div><br><input id="Dean" type="checkbox" value="Boyfriend">Dean</label>
+            <label for="Jess"><div id="image-jess"></div><br><input id="Jess" type="checkbox" value="Boyfriend">Jess</label>
+            <label for="Logan"><div id="image-logan"></div><br><input id="Logan" type="checkbox" value="Boyfriend">Logan</label>
+            <label for="Max"><div id="image-max"></div><br><input id="Max" type="checkbox" value="Boyfriend">Max</label>
+            <label for="Chris"><div id="image-chris"></div><br><input id="Chris" type="checkbox" value="Boyfriend">Chris</label>
+            <label for="Luke"><div id="image-luke"></div><br><input id="Luke" type="checkbox" value="Boyfriend">Luke</label>
+          </div>
+          <!--<div class="boys-container">
+            <label for="Dean"><img id="boys" src="img/dean.jpg" alt="dean"><br><input id="Dean" type="checkbox" value="Boyfriend">Dean</label>
+            <label for="Jess"><img id="boys" src="img/jess.jpg" alt="jess"><br><input id="Jess" type="checkbox" value="Boyfriend">Jess</label>
+            <label for="Logan"><img id="boys" src="img/logan.jpg" alt="logan"><br><input id="Logan" type="checkbox" value="Boyfriend">Logan</label>
+            <label for="Max"><img id="boys" src="img/max.jpg" alt="max"><br><input id="Max" type="checkbox" value="Boyfriend">Max</label>
+            <label for="Chris"><img id="boys" src="img/chris.jpg" alt="chris"><br><input id="Chris" type="checkbox" value="Boyfriend">Chris</label>
+            <label for="Luke"><img id="boys" src="img/luke.jpg" alt="luke"><br><input id="Luke" type="checkbox" value="Boyfriend">Luke</label>
+          </div>-->
+          <h3>Gilmore Girls: A Year in the Life was much anticipated and received mixed reviews. In your opinion, was the production a hit or a miss?</h3>
+          <p>Please provide supporting evidence and arguments for each side<p>
+          <textarea name="discussion-topic" placeholder="Please write your answer here" rows="8" cols="80"></textarea>"
+          <button id="submit" type="submit" name="button">Submit</button>
+        </form>
+    </div>
+  </body>
+</html>
